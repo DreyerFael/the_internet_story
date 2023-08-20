@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --cor-principal: #EEE2DE;
+            --cor-secundaria: #EA906C;
+            --cor-tercearia: #B31312;
+            --cor-hover: ?;
+            --cor-bordas: #2B2A4C;
+        }
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: var(--cor-principal);
+            margin: 10px;
+        }
+
+        .apresentacao{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 50px;
+            color: var(--cor-tercearia);
+            background-color: var(--cor-secundaria);
+            margin:40px 20px;
+            border-radius: 5px;
+            border: solid;
+            border-color: var(--cor-bordas);
+        }
+
+        .conteudo{
+            display: flex;
+            justify-content: space-between;
+            gap: 13px;
+        }
+
+        .botao{
+            background-color: var(--cor-secundaria);
+            border-radius: 5px;
+            border-color: var(--cor-bordas);
+            margin: 10px 0px;
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .subtitulo{
+            color: var(--cor-tercearia);
+            margin: 20px;
+            justify-content: space-around;
+        }
+
+        .subtitulo:hover{
+            background-color: var(--cor-hover);
+        }
+
+        .ocultar{
+            padding: 2px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .texto {
+            margin: 0px 30px 5px 0;
+            border-style: solid;
+            border-color: var(--cor-bordas);
+            background-color: var(--cor-secundaria);
+        }
+
+        .active, .ocultar:hover {
+             background-color: var(--cor-hover);
+    }
+
+        /*.botaodrp{
+            background-color: var(--cor-secundaria);
+            color: var(--cor-principal);
+            padding: 20px;
+            font-size: 15px;
+            border: none;
+}
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+        .conteudo__drp{
+            display: none;
+            position: absolute;
+            background-color: var(--cor-hover);
+            min-width: 150px;
+            box-shadow: 0px 16px 32px 0px var(--cor-principal);
+            z-index: 1;
+        }
+
+        .dropdown:hover .conteudo__drp {display: block;}*/
+    </style>
+</head>
+<header>
+    <h1 class="titulo">A historia da internet</h1>
+</header>
+<body class="apresentacao">
+    <ul class="">
+        <button class="botao"><h3 class="subtitulo">Anos 60</h3></button>
+        <nav class="ocultar">
+            <h3>Inserir o texto</h3>
+            <p class="texto">A internet teve suas origens na década de 1960 como uma rede de computadores do Departamento de Defesa dos EUA, chamada ARPANET (Advanced Research Projects Agency Network). Originalmente, a ARPANET foi criada para permitir que cientistas e acadêmicos de
+                diferentes locais físicos compartilhassem informações e colaborassem em pesquisa.. </p>
+        </nav>
+        <button class="botao"><h3 class="subtitulo">Anos 70</h3></button>
+        <nav class="ocultar">
+            <h3>Inserir o texto</h3>
+            <p class="texto">Os anos 70 testemunharam o desenvolvimento dos protocolos TCP/IP (Transmission Control Protocol/Internet Protocol), que permitem a transferência de dados entre computadores em redes diferentes. A adoção desses protocolos pela ARPANET em 1983 marcou a
+                operacionalização da internet como a conhecemos hoje..</p>
+        </nav>
+        <button class="botao"><h3 class="subtitulo">Anos 80</h3></button>
+        <nav class="ocultar">
+            <h3>Inserir o texto</h3>
+            <p class="texto">Os anos 70 testemunharam o desenvolvimento dos protocolos TCP/IP (Transmission Control Protocol/Internet Protocol), que permitem a transferência de dados entre computadores em redes diferentes. A adoção desses protocolos pela ARPANET em 1983 marcou a
+                operacionalização da internet como a conhecemos hoje...</p>
+        </nav>
+        <button class="botao"><h3 class="subtitulo">Anos 90</h3></button>
+        <nav class="ocultar">
+            <h3>Inserir o texto</h3>
+            <p class="texto">Em 1991, o CERN (Conselho Europeu para a Pesquisa Nuclear) apresentou ao mundo a World Wide Web, uma rede de hipertexto acessível ao público e projetada para tornar a internet mais fácil de usar. O primeiro navegador web, chamado Mosaic, foi lançado
+                em 1993, tornando a Web mais acessível para o usuário comum. No final dos anos 1990, a internet deu lugar à "bolha do ponto com", uma época de especulação de mercado em torno das
+                empresas de internet.</p>
+        </nav>
+        <button class="botao"><h3 class="subtitulo">Anos 2000</h3></button>
+        <nav class="ocultar">
+            <h3>Inserir o texto</h3>
+            <p class="texto">Os anos 2000 foram caracterizados pelo surgimento das redes sociais e do compartilhamento de vídeos online. Sites como Facebook, YouTube e Twitter foram lançados durante esse período, e o acesso à internet em dispositivos móveis começou a se
+                tornar cada vez mais comum.</p>
+        </nav>
+        <button class="botao"><h3 class="subtitulo">Anos 2010</h3></button>
+        <nav class="ocultar">
+            <h3>Inserir o texto</h3>
+            <p class="texto">Os anos 2010 foram marcados pelo crescimento do uso da internet móvel e do cloud computing. Os smartphones se tornaram o principal meio de acesso à internet para muitas pessoas. Ao mesmo tempo, empresas e indivíduos começaram a usar cada vez mais
+                a "nuvem" para armazenar dados e rodar aplicações.</p>
+        </nav>
+        <button class="botao"><h3 class="subtitulo">Anos 2023</h3></button>
+        <nav class="ocultar">
+            <h3>Inserir o texto</h3>
+            <p class="texto">No entanto, o crescimento da internet também levanta questões importantes sobre privacidade, segurança, desinformação e acesso digital. Lidar com esses desafios é uma das principais tarefas daqueles que moldam o futuro da internet. E assim chegamos ao presente. A internet
+                revolucionou a maneira como nos comunicamos, trabalhamos, jogamos e vivemos. É difícil imaginar um mundo sem ela, e sem dúvida o futuro
+                da internet trará ainda mais mudanças.</p>
+        </nav>
+    </ul>
+    <script>
+        window.alert ('Essa pagina conta um breve resumo sobre a historia da internet.')
+        var acc = document.getElementsByClassName("botao");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var ocultar = this.nextElementSibling;
+        if (ocultar.style.maxHeight) {
+            ocultar.style.maxHeight = null;
+        } else {
+            ocultar.style.maxHeight = ocultar.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
+</body>
+</html>
